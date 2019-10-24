@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/circular.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="cssfadein%20animation.css" />
+
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/checkboxes.css">
+    <link rel="stylesheet" href="overlyimg.css">
+    <link rel="stylesheet" href="css/modelmenu.css">
+    <link rel="stylesheet" href="megamenu.css">
+
+
+
+    <!--mega menu-->
+    <!--<script src="jquerries.js"></script>-->
+    <script type="text/javascript" src="progressbar.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/7db1fe038f.js" crossorigin="anonymous"></script>
+    <!--Copy Kit Code-->
+
+</head>
+<body>
+<!--slider-->
+<div id="slider_1" class="container-fluid" style="margin-top:7%;width: 100%;">
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/s1.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/s2.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="assets/s3.jpg" style="width:100%">
+        <div class="text"></div>
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+
+<!--slider end -->
+
+<section id="menu" class="section-header-SCTE">
+    <div class="navigation-header" style="padding: 0px;margin: 0px;height: 70%;width: 99%;margin-left: 2px;">
+        <div  class="container-fluid">
+            <div  class="logo-img-header" style="margin-top: 2%;">
+                <img src="assets/newlogo.svg" alt="logo SCTE" class="logo-header">
+            </div>
+            <div class="col">
+                <nav  class="navbar responsive-navbar">
+                    <div class="responsive">
+                        <ul class="nav navbar-nav res-header">
+                            <li class="menu"><a href="#">WHAT WE DO</a></li>
+                            <li><a href="#">STANDARDS</a></li>
+                            <li><a href="#">EDUCATION</a></li>
+                            <li><a href="#">CERTIFICATION</a></li>
+                            <li><a href="#">EVENTS</a></li>
+                            <li><a href="#">MEMBERSHIP</a></li>
+                            <li><a href="#">CHAPTERS</a></li>
+                            </ul>
+                    </div>
+                </nav>
+
+            </div>
+            <div class="col" style="width: 87%;margin-left: 14%;margin-top: -3%;">
+                <div class="col" style="margin-top: 1%;margin-left: 1%;">
+                    <div class="desktop">
+                        <ul class="nav navbar-nav">
+                            <li class="inner-what"><a href="#">WHAT WE DO
+                                <ul >
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+
+                                </ul>
+                            </a>
+                            </li>
+                            <li class="inner-standards"><a href="#">STANDARDS
+                                <ul >
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+                                </ul>
+
+                            </a></li>
+                            <li  class="inner-education"><a href="#">EDUCATION
+                                <ul>
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+                                </ul>
+
+                            </a></li>
+                            <li class="inner-certification"><a href="#">CERTIFICATION
+                                <ul >
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+                                </ul>
+
+                            </a></li>
+                            <li class="inner-event"><a href="#">EVENTS
+                                <ul >
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+                                </ul>
+
+                            </a></li>
+                            <li class="inner-membership"><a href="#">MEMBERSHIP
+                                <ul >
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+                                </ul>
+
+                            </a></li>
+                            <li  class="inner-chapters"><a href="#">CHAPTERS
+                                <ul>
+                                    <li><a href="#">STANDARDS</a></li>
+                                    <li><a href="#">EDUCATION</a></li>
+                                    <li><a href="#">CERTIFICATION</a></li>
+                                    <li><a href="#">EVENTS</a></li>
+                                    <li><a href="#">MEMBERSHIP</a></li>
+                                    <li><a href="#">CHAPTERS</a></li>
+                                </ul>
+
+                            </a></li>
+                            <li><button type="button"class="f-f-m d-flex f-s-14 join-btn"> JOIN US</button></li>
+                            <li>  <button type="button" class="f-f-m d-flex f-s-14  logIn-btn"> LOG IN</button></li>
+                            <li> <img src="assets/search%20(1).png" alt="search icon"></li>
+                            <li><img src="assets/cart.png" alt="cart icon"></li>
+
+                        </ul>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(".fa-bars").click(function () {
+            $(".resp-lst").toggle()
+        })
+
+        $(".inner-what ,.inner-what ul").mouseenter(function(){
+            $(".inner-what > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-what ,.inner-what ul").mouseleave(function(){
+            $(".inner-what > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+
+
+        $(".inner-standards ,.inner-standards ul").mouseenter(function(){
+            $(".inner-standards > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-standards ,.inner-standards ul").mouseleave(function(){
+            $(".inner-standards > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+        $(".inner-education ,.inner-education ul").mouseenter(function(){
+            $(".inner-education > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-education ,.inner-education ul").mouseleave(function(){
+            $(".inner-education > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+        $(".inner-certification ,.inner-certification ul").mouseenter(function(){
+            $(".inner-certification > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-certification ,.inner-certification ul").mouseleave(function(){
+            $(".inner-certification > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+        $(".inner-event ,.inner-event ul").mouseenter(function(){
+            $(".inner-event > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-event ,.inner-event ul").mouseleave(function(){
+            $(".inner-event > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+        $(".inner-membership ,.inner-membership ul").mouseenter(function(){
+            $(".inner-membership > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-membership ,.inner-membership ul").mouseleave(function(){
+            $(".inner-membership > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+        $(".inner-chapters ,.inner-chapters ul").mouseenter(function(){
+            $(".inner-chapters > ul").show()
+            $(".navigation-header").css("height","400px")
+        })
+        $(".inner-chapters ,.inner-chapters ul").mouseleave(function(){
+            $(".inner-chapters > ul").hide()
+            $(".navigation-header").css("height","80px")
+        })
+
+    })
+
+
+</script>
+
+
+
+
+<!--NAV BAR END-->
+
+
+
+<!--sec 2 start-->
+<div   id="sec2"  class="row" style="width:100%; height: 50%;margin: 0px;padding: 0px;">
+
+    <div class="container" style="width: 15%;height: 20%;margin:0;margin-left:50px;padding: 0px;">
+        <img src="assets/card1.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+            <a href=""><button  type="button" class="btn btn-light text-white"
+                                style="background-color: deepskyblue;width: 80%;">FIND A CHAPTER</button></a></div>
+
+    </div>
+    <div class="container" style="width: 15%;height: 20%;margin: 0px;padding: 0px;">
+        <img src="assets/card2.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+            <a href=""><button  type="button" class="btn btn-light text-white"
+                                style="background-color: deepskyblue;width: 80%;">FIND A CHAPTER</button></a></div>
+
+    </div>
+
+    <div class="container" style="width: 15%;height: 20%;margin: 0px;padding: 0px;">
+        <img src="assets/card3.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Hello World</div>
+            <a href=""><button  type="button" class="btn btn-light text-white"
+                                style="background-color: deepskyblue;width: 80%;">FIND A CHAPTER</button></a></div>
+
+    </div>
+
+    <div class="container" style="width: 15%;height: 20%;margin: 0px;padding: 0px;">
+    <img src="assets/card4.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+        <div class="text">MULTISITE NETWORK</div>
+        <a href=""><button  type="button" class="btn btn-light text-white"
+                            style="background-color: deepskyblue;width: 80%;">FIND A CHAPTER</button></a></div>
+    </div>
+
+    <div class="container" style="width: 15%;height: 20%;margin: 0px;padding: 0px;">
+        <img src="assets/card5.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">MULTISITE NETWORK</div>
+            <a href=""><button  type="button" class="btn btn-light text-white"
+                                style="background-color: deepskyblue;width: 80%;">FIND A CHAPTER</button></a>
+        </div>
+    </div>
+    <div class="container" style="width: 15%;height: 20%;margin: 0px;padding: 0px;">
+        <img src="assets/card6.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">MULTISITE NETWORK</div>
+            <a href=""><button  type="button" class="btn btn-light text-white"
+                                style="background-color: deepskyblue;width: 80%;">FIND A CHAPTER</button></a>
+        </div>
+    </div>
+</div>
+
+<!--overly on img-->
+
+<div id="glass" class="row" style="width: 90%;height: 90%; margin-top: 5%">
+    <div class="container_a">
+        <h1 style="z-index: 1;font-size: 34px;margin-top: 10%;">What you do not want done to yourself, do not do to others</h1>
+        <div class="color_overly"></div>
+    </div>
+</div>
+
+<!--&lt;!&ndash;circular progress bar&ndash;&gt;-->
+<div id="circular" class="row" style="width: 90%;height: 90%; margin-top: 5%">
+    <div class="row"style="margin-top: 10%; width: 95%;
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 179%;background-color: lightgray;">
+        <div class="col-md-3 col-sm-6">
+            <div class="progress blue">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">90%</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="progress yellow">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">75%</div>
+            </div>
+        </div>
+
+       <div class="col-md-3 col-sm-6">
+            <div class="progress pink">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">60%</div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="progress green">
+                <span class="progress-left">
+                    <span class="progress-bar"></span>
+                </span>
+                <span class="progress-right">
+                    <span class="progress-bar"></span>
+                </span>
+                <div class="progress-value">80%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--zigzag -->
+<div id="zigzag" class="d-flex justify-content-start align-content-center" style="background-color:cornflowerblue;margin-top: 3%;margin-left: 3%; width: 90%; height: 480px" >
+    <!--<img src="assets/flipper1.png" alt="Avatar" class="avatar" style="margin-top: 15px;">-->
+    <div class="circle">
+        <div class="circle_img">
+            <img src="assets/flipper1.png" alt="Avatar" class="avatar" style="margin-top: 15px;">
+        </div>
+        <div class="circle-content" style="text-align: center;font-size: 10px;">
+            <div style="margin-top: 50%"><h4> HOW  CAN OUR <br> TECHNALOGY<br> ADAPT TO THE<br> MOMENT </h4></div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <div class="circle_img">
+            <img src="assets/flipper2.png" alt="Avatar" class="avatar"  style="margin-top: 167px;">
+        </div>
+        <div class="circle-content_2" style="text-align: center;font-size: 10px;">
+            <div style="margin-top: 50%"><h4> HOW  CAN OUR <br> TECHNALOGY<br> ADAPT TO THE<br> MOMENT </h4></div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <div class="circle_img">
+            <img src="assets/flipper3.png" alt="Avatar" class="avatar"  style="margin-top: 1px;margin-left:1%;">
+        </div>
+        <div class="circle-content" style="text-align: center;font-size: 10px;">
+            <div style="margin-top: 50%"><h4> HOW  CAN OUR <br> TECHNALOGY<br> ADAPT TO THE<br> MOMENT </h4></div>
+        </div>
+    </div>
+
+    <div class="circle">
+        <div class="circle_img">
+            <img src="assets/flipper4.png" alt="Avatar" class="avatar"  style="margin-top: 167px; margin-left:10%;">
+        </div>
+        <div class="circle-content_2 align-item-center" style="text-align: center;font-size: 10px;">
+            <div style="margin-top: 50%"><h4> HOW  CAN OUR <br> TECHNALOGY<br> ADAPT TO THE<br> MOMENT </h4></div>
+        </div>
+    </div>
+</div>
+
+<!--card-->
+<div id="cards" class="col-sm-12 content">
+    <div class="card">
+        <div class="flex">
+            <p> interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="flex">
+            <p> interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="flex">
+            <p> interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+        </div>
+
+    </div>
+    <div class="card">
+        <div class="flex">
+            <p> interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="flex">
+            <p> interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <div class="flex">
+            <p> interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization. </p>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+
+
+
+<!--hamburger + model-->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">-->
+<!--<i class="fas fa-bars"></i>-->
+<!--</button>-->
+<!--SEC10 start-->
+<div id="model" class="d-flex justify-content-center align-content-center " style="margin-top: 5%; margin-left: 3%; width: 90%;">
+    <div id="myNav"class="overlayyy" style="background-color: red">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="" style="height: 50%;margin-left: 50%"><img src="assets/newlogo.svg">
+            <a href="#" style="margin-left: 5%">About</a>
+            <a href="#" style="margin-left: 5%">Services</a>
+            <a href="#" style="margin-left: 5%">Clients</a>
+            <a href="#" style="margin-left: 5%">Contact</a>
+        </div>
+    </div>
+    <div  class="row" style="background-color: CORNFLOWERBLUE;width: 100%">
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px" >Home</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px" >MEMBER</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px" >WHAT WE DO</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px" >STANDARD</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" style="font-size: 30px" >EDUCATION</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+            <div class="dropdown">
+                <button class="dropbtn" style="font-size: 30px" >EXPERIENCES</button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+         </div>
+            <div class="dropdown">
+                <button class="dropbtn" style="font-size: 30px" >SKILLS</button>
+                <div class="dropdown-content" style="transition: width 2s;">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <span style="font-size:54px;cursor:pointer;margin-left: 8%;" onclick="openNav()">&#9776; </span>
+    </div>
+</div>
+
+</div>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+
+
+<style>
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: relative;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        transition: width 2s;
+        width: 100px;
+        height: 100px;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    .dropdown:hover .dropdown-content {display: block; background-color: orange;}
+
+    .dropdown:hover .dropbtn {background-color: navy;}
+</style>
+
+<!--dropdwon-->
+<div id="arrow" class="row" style="width: 100%">
+    <a href="#sec3" title="go to sec 2" style="margin-left: 50%;scroll-behavior: smooth;">
+    <img src="assets/greyarrowdown.png" style="margin: 2%;">
+    </a>
+    </div>
+
+<!--horizontal progress bar-->
+<div id="horizontalbar" class="d-flex justify-content-center align-content-center" style="width: 90%;margin-bottom: 3%">
+    <div class="progressbar" style="width: 90%">
+            <h6>sub1:60%</h6>
+            <span class="bar" style="margin-bottom: 3%"><span class="sub1"><h4>60%</h4></span></span>
+
+            <h6>sub2:80%</h6>
+            <span class="bar" style="margin-bottom: 3%"><span class="sub2"><h4>80%</h4></span></span>
+
+            <h6>sub3:100%</h6><span class="bar" style="margin-bottom: 3%"><span class="sub3"><h4>100%</h4></span></span>
+    </div>
+</div>
+
+
+<!--checkboxes-->
+<h4 style="text-align: center;width: 32%"> check boxes</h4>
+<div id="c_boxes" class="row" style="margin-left: 10%;width: 66%;">
+<div style="margin: 2%;">checkbox1</div>
+<div style="margin: 2%"><label class="container_check"><input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
+</div>
+
+
+<div class="row" style="margin-left: 10%;width: 66%;">
+    <div style="margin: 2%">checkbox2</div>
+    <div style="margin: 2%"><label class="container_check"><input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
+</div>
+
+<div class="row" style="margin-left: 10%;width: 66%;">
+    <div class="row" style="margin: 2%">checkbox3</div>
+    <div style="margin: 2%"><label class="container_check"><input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
+</div>
+
+<div class="row" style="margin-left: 10%;width: 66%;">
+    <div style="margin: 2%">checkbox4</div>
+    <div style="margin: 2%"><label class="container_check"><input type="checkbox" checked="checked"><span class="checkmark"></span></label></div>
+</div>
+
+
+
+
+<!--&lt;!&ndash;toggle button&ndash;&gt;-->
+<!--<h4 style="text-align: center;margin-left: 33%"> Toggle button</h4>-->
+<!--<div class="container">-->
+       <!--<div class="btn-group" style="margin-left: 94%;margin-top: -9%;">-->
+            <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="color:blue">-->
+                <!--Departments-->
+            <!--</button>-->
+            <!--<div class="dropdown-menu " style="background: #f4bc16;">-->
+                <!--<a class="dropdown-item " style="color: white" href="#">computer science</a>-->
+                <!--<a class="dropdown-item " style="color: white" href="#">software engineering</a>-->
+                <!--<a class="dropdown-item "  style="color: white" href="#">computer science</a>-->
+                <!--<a class="dropdown-item " style="color: white" href="#">software engineering</a>-->
+                <!--<a class="dropdown-item " style="color: white" href="#">computer science</a>-->
+                <!--<a class="dropdown-item " style="color: white"  href="#">software engineering</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--css fade animation-->
+<div id="css_ani"class="style fade-in" style="width: 88%;height: 90%;margin-left: 3%;">
+    <p style="text-align: center;"> css fade animation</p>
+</div>
+
+<!--collapse-->
+
+<div  id="accordion" style="width: 80%;margin-left: 10%;margin-top: 3%">
+    <div class="col_card">
+        <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                <button type="button " class="btn btn-info" data-toggle="collapse" data-target="#collapseOne"><b>+</b></button>
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse in" data-parent="#accordion">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+    </div>
+    <div class="col_card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                <button type="button " class="btn btn-info" data-toggle="collapse" data-target="#collapseTwo"><b>+</b></button>
+
+            </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+    </div>
+    <div class="col_card">
+        <div class="card-header">
+            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                <button type="button " class="btn btn-info" data-toggle="collapse" data-target="#collapseThree"><b>+</b></button>
+            </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion">
+            <div class="card-body">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!--&lt;!&ndash; sec 21 gradient shade&ndash;&gt;-->
+<!--<div class="view overlay">-->
+    <!--<img src="assets/cover_bg_1.jpg" class="img-fluid " alt="smaple image">-->
+    <!--<div class="mask flex-center rgba-red-strong">-->
+        <!--<p class="white-text">Strong overlay</p>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--jquerry animation-->
+<div id="jquerryani" class="container">
+    <h1>jquerry animation</h1>
+    <div class="center">
+        <div class="moon"></div>
+        <div class="cloud-left">
+            <span class="cloud1"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+        </div>
+        <div class="cloud-right">
+            <span class="cloud2"><i class="fa fa-cloud" aria-hidden="true"></i></span>
+        </div>
+    </div>
+    <div class="comet"></div>
+</div>
+
+<script>
+    $(function() {
+        $('.cloud-left').hover(function() {
+            $('h1').css('color', 'yellow');
+        }, function() {
+            $('h1').css('color', '');
+        });
+    });
+    $(function() {
+        $('.cloud-right').hover(function() {
+            $('h1').text('or code all night ; )').css('font-size','60px').css('color', 'pink');
+        }, function() {
+            $('h1').text('Good Night!').css('font-size','6em').css('color', 'white');
+        });
+    });</script>
+
+
+
+<!--scrollspy-->
+
+
+<!--<div class="container">-->
+<!--<h1>TOOLTIPS</h1>-->
+    <!--<p> interface design; authoring, including standardised code and proprietary software; user experience design;-->
+        <!--and search engine optimization.<a href="" data-toggle="tooltip" data-placement="right" title="Hooray!">?</a> </p>-->
+
+    <!--<p> interface design; authoring, including standardised code and proprietary software; user experience design;-->
+        <!--and search engine optimization.<a href="" data-toggle="tooltip" data-placement="left" title="Hooray!">?</a> </p>-->
+
+    <!--<p> interface design; authoring, including standardised code and proprietary software; user experience design;-->
+        <!--and search engine optimization.<a href="" data-toggle="tooltip" data-placement="top" title="Hooray!">?</a> </p>-->
+
+    <!--<p> interface design; authoring, including standardised code and proprietary software; user experience design;-->
+        <!--and search engine optimization.<a href="" data-toggle="tooltip" data-placement="bottom" title="Hooray!">?</a> </p>-->
+<!--</div>-->
+
+<!--<script>-->
+    <!--$(document).ready(function(){-->
+        <!--$('[data-toggle="tooltip"]').tooltip();-->
+    <!--});-->
+<!--</script>-->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+
+<div id="lastsec" class="globe" style="margin-top: 5%;width: 80%">
+    <form action="">
+        <div class="row" style="margin: 2%">
+                <div class="col">
+                    <label for="fname">First Name<p style="color: green">*</p></label>
+                </div>
+                <div class="col">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+                <div class="col">
+                    <label for="lname">Last Name <p style="color: green">*</p></label>
+                </div>
+                <div class="col">
+                    <input type="text" id="lname" name="lastname" placeholder="last name..">
+                </div>
+            </div>
+
+        <div class="row" style="margin: 2%">
+            <div class="col">
+                <label for="password">Password <p style="color: green">*</p></label>
+            </div>
+            <div class="col">
+                <input type="password" id="password" name="pass" placeholder="Password..">
+            </div>
+            <div class="col">
+                <label for="c_pass">confrm password<p style="color: green">*</p></label>
+            </div>
+            <div class="col">
+                <input type="password" id="c_pass" name="c_pass" placeholder="Confirm password..">
+            </div>
+        </div>
+
+
+            <div class="row">
+                <div class="col" style="margin-left: 2%">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="usa">USA</option>
+                        <option value="usa">USA</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="z_code">ZIP CODE</label>
+                </div>
+                <div class="col">
+                    <input type="number" id="z_code" name="z_code" placeholder="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    input[type=text], select, textarea {
+        width: 51%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+    }
+
+    label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    .col-25 {
+        float: left;
+        width: 18%;
+        margin-top: 6px;
+        margin-left: 3%;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+</style>
+</html>

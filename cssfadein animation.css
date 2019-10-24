@@ -1,0 +1,29 @@
+.fade-in {
+    animation: fadeIn ease 10s;
+
+}
+
+
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* The style below is just for the appearance of the example div */
+.style {
+    width:90vw; height:90vh;
+    text-align:center;
+    padding-top:calc(50vh - 50px);
+    margin-left:5vw;
+    border:4px double black;
+    background-color:blue;
+}
+.style p {
+    color:black;
+    font-size:50px;
+    text-align: center;
+}
